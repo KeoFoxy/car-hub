@@ -5,6 +5,7 @@ import Footer from "./Footer/Footer";
 import SearchBar from "./SearchBar/SearchBar";
 import CustomFilter from "./CustomFilter/CustomFilter";
 import SearchManufacturer from "./SearchManufacturer/SearchManufacturer";
+import CarCard from "./CarCard/CarCard";
 
 export {
     Hero,
@@ -13,5 +14,6 @@ export {
     Footer,
     SearchBar,
     CustomFilter,
-    SearchManufacturer
+    SearchManufacturer,
+    CarCard
 }
