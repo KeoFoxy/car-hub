@@ -4,8 +4,12 @@ import Image from "next/image";
 import {useState} from "react";
 
 import { fetchCars, calculateCarRent } from "@/utils";
-import { CarCardProps } from "@/components/CarCard/CarCard.props";
-import CustomButton from "@/components/CustomButton/CustomButton";
+import { CarProps } from "@/components/CarCard/Car.props";
+import { CarDetails, CustomButton } from "@/components";
+
+interface CarCardProps {
+    car: CarProps;
+}
 
 const CarCard = ({ car }:CarCardProps ) => {
     const { city_mpg, year, make, model, transmission, drive } = car;
@@ -67,7 +71,10 @@ const CarCard = ({ car }:CarCardProps ) => {
 
                 </div>
 
-            {/*<CarDetails />*/}
+            <CarDetails isOpen={isOpen}
+                        closeModal={() => setIsOpen(false)}
+                        car={car}
+            />
         </div>
     );
 };
