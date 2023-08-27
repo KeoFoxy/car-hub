@@ -3,7 +3,7 @@
 import Image from "next/image";
 import {useState} from "react";
 
-import { fetchCars, calculateCarRent, generateCarImageUrl } from "@/utils";
+import { calculateCarRent, generateCarImageUrl } from "@/utils";
 import { CarProps } from "@/components/CarCard/Car.props";
 import { CarDetails, CustomButton } from "@/components";
 
@@ -68,9 +68,7 @@ const CarCard = ({ car }:CarCardProps ) => {
                                       handleClick={() => setIsOpen(true)}
                         />
                     </div>
-
                 </div>
-
             <CarDetails isOpen={isOpen}
                         closeModal={() => setIsOpen(false)}
                         car={car}
