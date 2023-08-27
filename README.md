@@ -1,5 +1,9 @@
 # Car-Hub
 
+![main](./public/preview-main.png)
+
+![main](./public/preview-car-catalogue.png)
+
 ## :memo: About
 
 This app allows you to find a vehicle by brand and model. More accurate selection will be provided by 2 custom filters. And the API will provide you with all the information about the car in the form of characteristics and images from different angles.
